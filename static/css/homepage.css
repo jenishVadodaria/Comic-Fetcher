@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  background: linear-gradient(#000000, #434343);
+  margin: 0;
+  padding: 20px;
+  font-weight: 600;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+  }
+}
+.container {
+  display: flex;
+  height: 370px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: wheat;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 50px;
+  font: bold;
+  margin: 30px 20px 20px 30px;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+}
+@media (max-width: 767px) {
+  .login {
+    font-size: 38px;
+    font: bold;
+    margin: 30px 20px 20px 30px;
+    text-align: center;
+    font-family: "Satisfy", cursive;
+  }
+}
+
+.text {
+  line-height: 1.5;
+  margin: 0px 20px 0px 30px;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 767px) {
+  .text {
+    font-size: 1rem;
+  }
+}
+
+.right {
+  background: #e6d0ff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0.6);
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+.form {
+  padding: 50px 40px 120px 40px;
+  font-size: 20px;
+  position: relative;
+  color: black;
+}
+@media (max-width: 767px) {
+  .form {
+    padding: 50px 40px 80px 40px;
+  }
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: black;
+}
+label {
+  display: block;
+  font-size: 18px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.form input {
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.form input[type="submit"] {
+  background-color: #d0fffd;
+  outline: border;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 0px 0px 0px 1.5px;
+  font-size: 13.5px;
+  width: 40%;
+  color: black;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: aqua;
+  color: black;
+  transform: scale(1.06);
+}
